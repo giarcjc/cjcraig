@@ -1,28 +1,9 @@
 {
-  "name": "cjcraig",
-  "version": "1.0.0",
-  "description": "docker-angular-tutum tut",
-  "main": "index.js",
-  "scripts": {
-    "test": "node ./node_modules/karma/bin/karma start --single-run"
-  },
-  "author": "Chris Craig",
-  "license": "MIT",
-  "dependencies": {
-    "compression": "^1.5.2",
-    "errorhandler": "^1.4.2",
-    "express": "^4.13.3",
-    "morgan": "^1.6.1",
-    "body-parser": "^1.13.3"
-  },
-  "devDependencies": {
-    "karma": "^0.13.9",
-    "karma-chai": "^0.1.0",
-    "karma-mocha": "^0.2.0",
-    "karma-ng-html2js-preprocessor": "^0.1.2",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "phantomjs": "^1.9.18",
-    "chai": "^3.2.0",
-    "mocha": "^2.3.0"
+    "name": "jade2"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.8"
+    , "jade": ">= 0.0.1"
   }
 }

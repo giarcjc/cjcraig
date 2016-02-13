@@ -1,0 +1,47 @@
+body#top
+    header#header
+        a(href="#", class="image avatar")
+            img(src="images/avatar_1.jpg", alt=title)
+        h1
+            | #{salutation1} #{name} 
+            | #{salutation2}
+    div#main
+        section#one
+            header.major
+                h2 I am a software engineer currently living in Denver, CO.
+            p Since 1999 I've worked in various roles including front-end developer, QA engineer, and manager. I'm currently employed as a software engineer for an established financial company. For several years I was head of the web services department for a small midwestern college. As an independent contractor I have built quality inexpensive websites for individuals, small-businesses, churches and non-profits. And as part of a development team I've contributed to projects for enterprises including SEGA, SunGard, and The United States Treasury.
+            p In the last few years I've been working mostly with the MEAN stack (MongoDB, Express.js, Angular.js, Node.js), and in early 2015 I started learning Docker and deploying apps using docker containers running NGINX. But in over 15 years of development I've worked with plenty of other technologies including Java (Spring, Hibernate, MySQL, DB2, WebSphere, Tomcat), .NET (SQL Server, IIS, Entity-Framework), PHP (Drupal, Wordpress, MySQL, Linux, Apache), and a little bit of Python, Ruby and Perl.
+            p Although I'm not currently looking for full-time work, I am available for limited contract work. Contact me at chris@cjcraig.com and I'll be happy to discuss your project and what I can bring to the table.
+        section#companies
+            h2 I've built applications for:
+            div.row
+                each val in array1   
+                    article(class=workitem)
+                        img(src=thumbs + val.filename, alt=val.name) 
+        section#two
+            h2 ...and websites for small businesses and organizations like:
+            div.row
+                each val in array2    
+                    article(class=workitem)
+                        a(href=fulls + val.filename, class=fit)
+                            img(src=thumbs + val.filename, alt=val.name + ' website')
+                        h3 #{val.name}
+        section#three
+            div.row
+                div(class="8u 12u$(small)")
+                    form(method="POST", action="//formspree.io/chris@cjcraig.com")
+                        div(class="row uniform 50%")
+                            div(class="6u 12u$(xsmall)")
+                                input(type="text", name="name", id="name", placeholder="Name")
+                            div(class="6u 12u$(xsmall)")
+                                input(type="email", name="_replyto", id="email", placeholder="Email")
+                            div(class="hide")
+                                input(type="text", name="_subject", value="Submission from cjcraig.com")
+                            div(class="hide")
+                                input(type="text", name="_next", value="thanks.html")
+                            div(class="hide")
+                                input(type="text", name="_gotcha")
+                            div(class="12u$")
+                                textarea(name="message", id="message", placeholder="Message", rows="4")
+                            div.actions
+                                input(type="submit", value="Send Message")            
